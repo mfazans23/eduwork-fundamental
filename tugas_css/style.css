@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 12px;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: 'Lato', sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding-top: 33px;
+}
+
+.display-image {
+  margin-right: 31px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 350px;
+  margin-top: 11px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #dbdbdb;
+  border-radius: 2px;
+  padding: 45px 0 20px;
+  background-color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 268px;
+  margin-top: 35px;
+}
+
+form input {
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  width: 100%;
+  border-radius: 2px;
+  outline: initial;
+  padding: 10.5px 8px;
+}
+
+.input-group:first-of-type {
+  margin-bottom: 6px;
+}
+
+.password-field {
+  position: relative;
+}
+
+form .show-btn {
+  background-color: inherit;
+  color: #262626;
+  font-weight: 600;
+  position: absolute;
+  top: 12px;
+  right: 8px;
+  border: 0;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+form input::placeholder {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.85em;
+  font-weight: 400;
+  color: #65676b;
+}
+
+form .submit-btn {
+  background-color: #1c8be0;
+  color: #fff;
+  font-weight: 600;
+  border: 0;
+  border-radius: 2px;
+  outline: 0.1px solid #1c8be0;
+  margin-top: 15px;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.separate-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 268px;
+  color: #888484;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.line-left,
+.line-right {
+  content: '';
+  width: 40%;
+  border-bottom: 1px solid #dbdbdb;
+  padding-top: 6px;
+}
+
+.fb-login-link {
+  display: flex;
+  align-items: center;
+  color: #385185;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1rem;
+  margin-top: 27px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.fb-login-link i {
+  font-size: 1.5rem;
+  margin-right: 8px;
+}
+
+.forgot-password-link {
+  color: #00376b;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.signup-container {
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  color: #262626;
+  font-size: 1.2rem;
+  border: 1px solid #dbdbdb;
+  margin-top: 10px;
+  padding: 22.5px 0;
+}
+
+.signup-container a {
+  font-family: 'Raleway', sans-serif;
+  color: #0095f6;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  /* cursor: pointer; */
+}
+
+.download-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.download-container span {
+  color: #262626;
+  font-size: 1.2rem;
+}
+
+.download-container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 21px;
+}
+
+.download-btn {
+  margin: 0 4px;
+}
+
+.download-image {
+  height: 40px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #8e8e8e;
+  margin: 29px 0 40px;
+  padding: 0 20px;
+}
+
+.links-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 843px;
+  font-size: 1rem;
+  margin-top: 35px;
+}
+
+.links-container a {
+  flex-grow: 1;
+  color: #8e8e8e;
+  text-decoration: none;
+  text-align: center;
+}
+
+.footer div:nth-of-type(2) {
+  display: flex;
+  margin: 20px 5px;
+}
+
+.lang-option {
+  background-color: rgba(253, 249, 249, 0.781);
+  color: #8e8e8e;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  /* padding-right: 1px; */
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 750px) {
+  .display-image {
+    display: none;
+  }
+
+  .footer {
+    padding: 0 45px;
+  }
+
+  .links-container a {
+    min-width: 56px;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  main {
+    padding: 0;
+  }
+
+  .form-container,
+  .signup-container {
+    border: 0;
+    background-color: inherit;
+  }
+}
